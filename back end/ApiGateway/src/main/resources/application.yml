@@ -1,0 +1,18 @@
+spring:
+   cloud:
+       gateway:
+         routes:
+         - id:Guest
+           uri:http://localhost:9091
+      
+ 
+       
+management:
+  endpoints:
+   web:
+    explosure:
+       include:"*"
+       
+       
+server:
+   port: 8086      
